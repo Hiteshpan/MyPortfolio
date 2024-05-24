@@ -67,6 +67,7 @@ const Navbar = ({
                     <button onClick={() => handleButtonClick("home")}>Home</button>
                     <button onClick={() => handleButtonClick("about")}>About</button>
                     <button onClick={() => handleButtonClick("projects")}>Projects</button>
+                    <button onClick={() => handleButtonClick("skills")}>Skills</button>
                     <button onClick={() => handleButtonClick("contact")}>Contact</button>
                 </div>
             }
