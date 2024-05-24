@@ -1,0 +1,343 @@
+.section1outer{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    background-color: #000;
+}
+
+
+.smokevideo{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+.maintextdiv{
+    text-align: center;
+    width: 50vw;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.mainimg{
+    /* min-width: 300px; */
+    width: 100vw;
+    height: 85%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    z-index: 4;
+    position: absolute;
+    bottom: -2%; 
+    left: -2%;
+}
+
+.maintextdiv p{
+    text-align: end;
+    font-size: 3rem;
+    color: #fff;
+    font-family: "Anta",sans-serif;
+}
+
+.maintextdiv h1{
+    font-size: 6.2rem;
+    color: transparent;
+    width: 100%;
+    -webkit-text-stroke: 2px #fff;
+    word-spacing: 2.5rem;
+}
+
+.maintextdiv h2{
+ align-self: flex-end;
+ font-family: "Cedarville Cursive",cursive;
+ font-weight: 400;
+ font-size: 4.5rem;
+ position: relative;
+ top: -45px;
+ right: -30px;
+ transform: rotate(-15deg);
+}
+
+.subtextdiv{
+    z-index: 5;
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0%;
+    padding: 20px;
+    padding-left: 60px;
+}
+
+.subtextdiv .left .about{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 400px;
+}
+
+.subtextdiv .left .about p{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 200;
+}
+
+
+.subtextdiv .left .about p span {
+    font-weight: 400;
+    font-family: "Anta", sans-serif;
+    font-size: 2rem;
+}
+.subtextdiv .right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.subtextdiv .right .stat{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    /* justify-content: space-between; */
+}
+
+.subtextdiv .right .stat h1{
+    font-size: 4rem;
+    color: #fff;
+    font-family: "Anta", sans-serif;
+}
+
+.subtextdiv .right .stat p{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 200;
+}
+
+
+
+@media(min-width: 1260px) and (max-width: 1420px){
+    .maintextdiv h1{
+        font-size: 5.9rem;
+        word-spacing: 1vw;
+    }
+
+    .maintextdiv h2{
+        font-size: 4rem;
+    }
+}
+
+
+
+@media(min-width: 1000px) and (max-width: 1260px){
+    .maintextdiv h1{
+        font-size: 4.9rem;
+        word-spacing: 1vw;
+    }
+
+    .maintextdiv p{
+        font-size: 2.5vw;
+    }
+
+    .maintextdiv h2{
+        font-size: 3.6rem;
+        top: -40px;
+        right: -50px;
+    }
+
+    .subtextdiv .right .stat h1{
+        font-size: 3rem;
+    }
+
+}
+
+
+@media(min-width: 790px) and (max-width: 1030px){
+    .maintextdiv h1{
+        font-size: 3.8rem;
+        word-spacing: 0.6vw;
+    }
+
+    .maintextdiv p{
+        font-size: 1.5rem;
+    }
+
+    .maintextdiv h2{
+        font-size: 2.7rem;
+        top: -30px;
+        right: -30px;
+    }
+
+    .subtextdiv .right .stat h1{
+        font-size: 2rem;
+    }
+
+}
+
+@media(min-width: 530px) and (max-width: 790px){
+
+    .maintextdiv{
+        top: 15%;
+    }
+
+    .mainimg{
+        bottom: -13%; 
+    }
+
+    .maintextdiv h1{
+        font-size: 2.5rem;
+        word-spacing: 0.6vw;
+    }
+
+    .maintextdiv p{
+        font-size: 1.4rem;
+    }
+
+    .maintextdiv h2{
+        font-size: 2rem;
+        top: -20px;
+        right: -20px;
+        align-self: center;
+        transform: rotate(-10deg);
+    }
+
+    .subtextdiv .right .stat h1{
+        font-size: 1.6rem;
+    }
+    .subtextdiv .right .stat p{
+        font-size: 1rem;
+    }
+
+
+    .subtextdiv .left .about{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 270px;
+    }
+
+    .subtextdiv .left .about p{
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 200;
+    }
+    
+    
+    .subtextdiv .left .about p span {
+        font-weight: 400;
+        font-family: "Anta", sans-serif;
+        font-size: 1.6rem;
+    }
+
+    /* .subtextdiv{
+        flex-direction: column;
+    } */
+
+}
+
+
+@media(min-width: 300px) and (max-width: 540px){
+
+    .maintextdiv{
+        top: 18%;
+    }
+
+    .mainimg{
+        bottom: -17%; 
+    }
+
+    .maintextdiv h1{
+        font-size: 1.7rem;
+        word-spacing: 0.6vw;
+    }
+
+    .maintextdiv p{
+        font-size: 1.2rem;
+    }
+
+    .maintextdiv h2{
+        font-size: 1.5rem;
+        top: -13px;
+        right: -20px;
+        align-self: center;
+        transform: rotate(-10deg);
+    }
+
+    .subtextdiv .right .stat h1{
+        font-size: 1.3rem;
+    }
+    .subtextdiv .right .stat p{
+        font-size: 1rem;
+    }
+
+
+    .subtextdiv .left .about{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 270px;
+    }
+
+    .subtextdiv .left .about p{
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 200;
+    }
+    
+    
+    .subtextdiv .left .about p span {
+        font-weight: 400;
+        font-family: "Anta", sans-serif;
+        font-size: 1.6rem;
+    }
+
+      .subtextdiv{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        background-color: rgba(0, 0, 0, 0.296);
+        padding: 10px;
+        padding-left: 20px;
+    }
+    .subtextdiv .left .about{
+        text-align: center;
+    }
+    .subtextdiv .right{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between ;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:300){
+    .subtextdiv{
+        justify-content: space-between;
+    }
+    .subtextdiv .left .about p:nth-child(2){
+     font-size: 1rem;
+    }
+    .subtextdiv .left .stat h1{
+      font-size: 1.1rem;
+    }
+    .subtextdiv .right .stat p{
+       font-size: .7rem;
+    }
+}
